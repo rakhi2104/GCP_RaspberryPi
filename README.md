@@ -1,27 +1,27 @@
-# Connection between Google Cloud Storage and Raspberry Pi 3B
+# Connection between Google Cloud Storage (GCP) and Raspberry Pi 3B
 
 ## Target
-- Raspberry pi is most commonly used device in IoT Platform 
-- To do efficient Analytics on Data that is captured from Raspberry pi we transfer the data to high capability Server.
-- Google Cloud Storage functions help in transfer of data.
+- Raspberry Pi is most commonly used device in IoT Platform 
+- Efficient analytics on data captured from Raspberry Pi is transferred to Server running in GCP or Amazon EC2.
+- We use Google cloud storage functions help in transfer of data to Google cloud platform.
 
 ---
 ## Packages Required
 - Python 3.7 (Preferably above by the time you read this!)
-- Google cloud Storage.
+- Google cloud storage.
 - PIL (For Image Transformations)
-- picamera ( For capturing Images in Raspberry pi)
+- picamera (For capturing images in Raspberry Pi)
 
 
 ## Procedure
 ### Credentials Required for Authentication.
-- Create a Google account and proceed to [Google-Storage](https://console.cloud.google.com)
-- Create a new Bucket and give it a name (Preferably a project you are working on)
-- Create a Key for Authentication [Key](https://console.cloud.google.com/apis/credentials)
+- Login to [Google cloud platform](https://console.cloud.google.com)
+- Create a new Bucket and give it a name (Preferably a project that you are working on)
+- Create a Key for Authentication [credentials](https://console.cloud.google.com/apis/credentials)
 - Create a JSON Key and download it to your project folder.
 - For reference [GCP_Python_Documentation](https://cloud.google.com/storage/docs/reference/libraries)
 ---
-### Functions used
+### Functions
 - Global Name Spaces are declared such as
  - PROJECT_ID,CLOUD_STORAGE_BUCKET,ALLOWED_EXTENSIONS
 - _ _check_extension_ so that only specific files are uploaded (Helpful in Security)
